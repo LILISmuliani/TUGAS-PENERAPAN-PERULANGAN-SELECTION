@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+// TUGAS PRAKTIKUM DIRUMAH 05/05/2020
+int main ()
+{
+	cout << " Nama : Lilis Muliani " << endl;
+	cout << " Nim : ETE10190097 " << endl;
+	cout << " Program Studi : Teknik Elektromedik " << endl;
+	cout << " =================================== " << endl;
+	
+	int angkaAwal = 1;
+	int angkaAkhir = 100;
+	
+	for ( int m = angkaAwal ; m <= angkaAkhir ; m++ ) {
+		int counterPrima = 0;
+		for ( int n = 1 ; n <= m ; n++ ) {
+			if ( m % n == 0 ) {
+				counterPrima++;
+				
+			}
+		}
+		
+		if ( counterPrima == 2 ) {
+			cout << m << " adalah bilangan PRIMA " << endl;
+		}
+	}
+	
+	return 0; 
+}
