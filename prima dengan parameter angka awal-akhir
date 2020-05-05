@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+// TUGAS PRAKTIKUM DIRUMAH 05/05/2020
+int main ()
+{
+	cout << " Nama : Lilis Muliani " << endl;
+	cout << " Nim : ETE10190097 " << endl;
+	cout << " Program Studi : Teknik Elektromedik " << endl;
+	cout << " =================================== " << endl;
+	
+	int angka = 5;
+	int counterPrima = 0;
+	for ( int u = 1 ; u <= angka ; u++ ) 
+	{
+		if ( angka % u == 0 )
+		{
+			cout << u << " adalah faktor pembagi " << endl;
+			counterPrima++;
+		}
+	}
+	
+	if ( counterPrima == 2 )
+	{
+		cout << angka << " adalah bilangan PRIMA " << endl;
+	} else
+	
+	{
+			cout << angka << " adalah BUKAN bilangan PRIMA " << endl;	
+	}
+	
+	return 0; 
+	
+}
